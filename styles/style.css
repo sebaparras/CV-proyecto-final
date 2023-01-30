@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos del Header */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: navy;
+}
+
+nav ul li {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.nav-link {
+    color: aquamarine !important;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.nav-link:hover {
+    color: springgreen !important;
+}
+
+.collapse {
+    display: flex;
+    justify-content: center;
+}
+
+/* Fin estilos del Header */
+
+/* Estilos sección 1 */
+
+.nombre {
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto {
+    width: 120px;
+    margin-top: 30px;
+    border-radius: 50px;
+}
+
+.nombre h1 {
+    font-size: 2rem;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.nombre h2 {
+    font-size: 1.5rem;
+    margin-bottom: 70px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Fin estilos sección 1 */
+
+/* Estilos sección 2 */
+
+.sections-list {
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sections-list h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: deepskyblue;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.sections-list h4 {
+    font-size: 1rem;
+}
+
+.info-personal {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+.habilidades {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.habilidades ul {
+    display: inline-block;
+    text-align: left;
+}
+
+.experiencia {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.experiencia ul {
+    display: inline-block;
+    text-align: left;
+}
+
+.historial-academico {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.historial-academico h4 {
+    font-weight: bold;
+}
+
+.historial-academico p {
+    color: blue;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.tecnologias {
+    text-align: center;
+}
+
+.tecnologias ul {
+    display: inline-block;
+    text-align: left;
+}
+
+/* Fin estilos sección 2 */
+
+/* Estilos del Footer */
+
+.contacto {
+    background-color: navy;
+    padding: 15px 0;
+}
+
+.contacto h3 {
+    display: flex;
+    justify-content: center;
+    color: aquamarine;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.contacto ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.contacto li span {
+    display: inline-block;
+    margin: 0 5px 5px 0;
+}
+
+/* Fin estilos del Footer */
+
+/* Media queries sección 1 */
+
+@media screen and (max-width: 768px) {
+    .foto {
+      width: 100px !important;
+    }
+
+    .nombre h1 {
+        font-size: 1.5rem;
+    }
+
+    .nombre h2 {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .foto {
+      width: 110px !important;
+    }
+
+    .nombre h1 {
+        font-size: 1.8rem;
+    }
+
+    .nombre h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Fin media queries sección 1 */
+
+/* Media queries sección 2 */
+
+@media screen and (max-width: 768px) {
+    .habilidades ul {
+      text-align: center;
+      list-style: none;
+    }
+
+    .experiencia ul {
+      text-align: center;
+      list-style: none;
+    }
+
+    .tecnologias ul {
+      text-align: center;
+      list-style: none;
+      margin-bottom: 120px;
+    }
+}
+
+/* Fin media queries sección 2 */
+
+/* Media queries del Footer */
+
+@media screen and (max-width: 768px) {
+    .contacto ul {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .contacto ul {
+      font-size: 14px;
+    }
+}
+
+/* Fin media queries del Footer */
